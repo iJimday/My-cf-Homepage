@@ -1,4 +1,2 @@
 
-- © [Jimday.](https://github.com/iJimday "Jimday.cn"){:target="_blank"} 2026. All Rights Reserved.
-
-<a href="url" target="_blank">超链接的名字</a>
+- © <a href="https://github.com/iJimday" title="Jimday.cn" target="_blank">Jimday.</a> 2026. All Rights Reserved.
