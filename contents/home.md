@@ -1,5 +1,5 @@
 
-[![iJimday](https://img.shields.io/badge/Github-iJimday-FF6633?logo=github&logoSize=auto)](https://github.com/iJimday)
+[![iJimday](https://img.shields.io/badge/Github-iJimday-FF6633?style=flat-square&logo=github&logoSize=auto)](https://github.com/iJimday)
 
 Jimday Tree New Bee❗ 🎉
 
