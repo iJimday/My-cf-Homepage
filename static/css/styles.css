@@ -73,7 +73,7 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #2937f0;
+  --bs-link-color: #FF6900;
   --bs-link-hover-color: #212cc0;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
@@ -10891,7 +10891,7 @@ section {
    color: var(--bs-cloudflare-color)
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: var(--bs-cloudflare-menu)
+  color: #FF6900;
 }
 
 
