@@ -77,6 +77,9 @@
   --bs-link-hover-color: #212cc0;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+  --bs-cloudflare-color: #F38020;
+  --bs-cloudflare-menu: #FF6633;
+  --bs-xiaomi-color: #FF6900;
 }
 
 *,
@@ -10881,14 +10884,14 @@ section {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
-  color: #F38020;
+  color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
 
-   color: var(--bs-blue)
+   color: var(--bs-cloudflare-color)
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #F38020;
+  color: #212529;
 }
 
 
