@@ -10888,10 +10888,10 @@ section {
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
 
-   color: var(--bs-cloudflare-color)
+  color: var(--bs-cloudflare-color);
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #FF6900;
+  color: var(--bs-cloudflare-menu);
 }
 
 
