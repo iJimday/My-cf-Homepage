@@ -74,6 +74,12 @@
     <!-- Core JS-->
     <script type="text/javascript" src="static/js/scripts.js"></script>
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+	
+	<script src="static/js/translate.js"></script>
+	<script>
+		translate.language.setUrlParamControl('lang');//根据URL传参控制以何种语种显示
+		translate.execute(); //执行翻译初始化操作，显示出select语言选择
+	</script>
 
 </head>
 
@@ -170,6 +176,10 @@
                 <a id="license-link" href="https://github.com/senli1073/academic-homepage-template"  target="_blank">Template</a>
                 <span class="mx-1">&middot;</span>
                 <a id="github-link" href="https://cloudflare.daijianmin.com/sitemap.xml"  target="_blank">Sitemap</a>
+				<span class="mx-1">&middot;</span>
+				<a class="ignore" href="javascript:translate.changeLanguage('english');">English</a>
+				<span class="mx-1">&middot;</span>
+				<a class="ignore" href="javascript:translate.changeLanguage('chinese_simplified');">中文</a>
             </div>
         </div>
     </footer>
