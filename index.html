@@ -77,6 +77,8 @@
 	
 	<script src="static/js/translate.js"></script>
 	<script>
+		translate.changeLanguage('english');
+		translate.setAutoDiscriminateLocalLanguage();    //设置用户第一次用时，自动识别其所使用的语种进行切换
 		translate.language.setUrlParamControl('lang');//根据URL传参控制以何种语种显示
 		translate.execute(); //执行翻译初始化操作，显示出select语言选择
 	</script>
