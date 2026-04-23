@@ -15,6 +15,7 @@ translate.nomenclature.append('chinese_simplified','english',`
 	Jimday | 小戴=Jimday
 	小戴的CF主页！🎉=Jimday's
 	Jimday's Cloudflare Homepage！=Cloudflare Homepage！🎉
+	模板=Template
 	网站地图=Sitemap
 `);//自定义翻译术语
 translate.progress.style=`
