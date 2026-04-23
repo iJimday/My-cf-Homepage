@@ -75,16 +75,9 @@
     <script type="text/javascript" src="static/js/scripts.js"></script>
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
 	
-	<script src="static/js/translate.js"></script><!--translate.zvo.cn-->
-	<script>
-		translate.selectLanguageTag.show = false //设置不显示语言选择的select下拉框
-		translate.language.setLocal('chinese_simplified');//设置本地语种为简体中文
-		translate.language.translateLanguagesRange = ['chinese_simplified'];//只翻译简体中文
-		translate.setAutoDiscriminateLocalLanguage();//设置用户第一次用时，自动识别其所使用的语种进行切换
-		translate.language.setUrlParamControl('lang');//根据URL传参控制以何种语种显示
-		translate.ignore.text.push('中文');//翻译时忽略指定的文字不翻译
-		translate.ignore.text.push('English');//翻译时忽略指定的文字不翻译
-	</script>
+	<!--translate.zvo.cn-->
+	<script src="static/js/translate.js"></script>
+	<script src="static/js/translate-fine-tuning.js"></script><!--translate.js settings-->
 
 </head>
 
@@ -187,7 +180,8 @@
 
 </body>
 
-	<script><!--translate.zvo.cn-->
+	<!--translate.zvo.cn-->
+	<script>
 		translate.execute(); //dom加载完后，进行translate.js 触发翻译的执行
 	</script>
 
