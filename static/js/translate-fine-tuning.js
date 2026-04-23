@@ -11,4 +11,6 @@ translate.nomenclature.append('chinese_simplified', 'english', `
 			小戴=Jimday
 			就不告诉你‼️=I won't tell you️‼️
 			Jimday | 小戴=Jimday
+			小戴的CF主页！🎉=Jimday's
+			Jimday's Cloudflare Homepage！=Cloudflare Homepage！🎉
 		`); //自定义翻译术语
