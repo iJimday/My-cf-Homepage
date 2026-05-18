@@ -2,188 +2,197 @@
 <html lang="zh-hans">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Academic Webpage" />
-    <meta name="author" content="Jimday" />
-    <title id="title"></title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="Academic Webpage" />
+	<meta name="author" content="Jimday" />
+	<title id="title"></title>
+	
+	<meta property="og:title" content="Jimday 的个人主页" />
+	<meta property="og:description" content="Jimday 的个人学术主页，展示研究成果、项目经历和联系方式" />
+	<meta property="og:image" content="https://cloudflare.daijianmin.com/static/assets/img/photo.png" />
+	<meta property="og:url" content="https://cloudflare.daijianmin.com/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="zh_CN" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Jimday 的个人主页" />
+	<meta name="twitter:description" content="Jimday 的个人学术主页，展示研究成果、项目经历和联系方式" />
+	<meta name="twitter:image" content="https://cloudflare.daijianmin.com/static/assets/img/photo.png" />
+	<link rel="canonical" href="https://cloudflare.daijianmin.com/" />
+	<meta name="keywords" content="Jimday, 个人主页, 学术主页, 研究成果, 项目经历" />
+	
+	<link rel="alternate" hreflang="x-default" href="https://cloudflare.daijianmin.com/" />
+	<link rel="alternate" hreflang="zh-CN" href="https://cloudflare.daijianmin.com/" />
+	<link rel="alternate" hreflang="en" href="https://cloudflare.daijianmin.com/?language=english" />
 
-    <!-- Icon -->
-    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+	<!-- Icon -->
+	<link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
 
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+	<!-- Bootstrap icons-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
+	<!-- Google fonts-->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
 
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+	<!-- Core theme CSS (includes Bootstrap)-->
+	<link type="text/css" href="static/css/styles.css" rel="stylesheet" />
+	<link type="text/css" href="static/css/main.css" rel="stylesheet" />
 
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
+	<!-- Bootstrap core JS-->
+	<script type="text/javascript" src="static/js/bootstrap.bundle.min.js" defer></script>
 
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
+	<!-- For Compatability -->
+	<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+	
+	<!-- Markdown -->
+	<script type="text/javascript" src="static/js/marked.min.js" defer></script>
 
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+	<!-- Mathematics -->
+	<script>
+		// See https://docs.mathjax.org/en/latest/index.html for more details.
+		MathJax = {
+			tex: {
+				packages: {},			  // extensions to use
+				inlineMath: [			  // start/end delimiter pairs for in-line math
+					['$', '$'],
+					['\\(', '\\)']
+				],
+				displayMath: [			 // start/end delimiter pairs for display math
+					['$$', '$$'],
+					['\\[', '\\]']
+				],
+				processEscapes: false,	  // use \$ to produce a literal dollar sign
+				processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
+				processRefs: true,		 // process \ref{...} outside of math mode
+				digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,	// pattern for recognizing numbers
+				tags: 'all',			  // or 'ams' or 'all'
+				tagSide: 'right',		  // side for \tag macros
+				tagIndent: '0.8em',		// amount to indent tags
+				useLabelIds: true,		 // use label name rather than tag for ids
+				maxMacros: 10000,		  // maximum number of macro substitutions per expression
+				maxBuffer: 5 * 1024,	   // maximum size for the internal TeX string (5K)
+				// baseURL:				   // URL for use with links to tags (when there is a <base> tag in effect)
+				// (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
+				formatError:			   // function called when TeX syntax errors occur
+					(jax, err) => jax.formatError(err)
+			}
+		};
+	</script>
+	<!-- <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script> -->
+	<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	
+	<!-- Core JS-->
+	<script type="text/javascript" src="static/js/scripts.js" defer></script>
+	<script type="text/javascript" src="static/js/js-yaml.min.js" defer></script>
 	
 	<!--translate.zvo.cn-->
-	<script src="static/js/translate.js"></script>
-	<script src="static/js/translate-fine-tuning.js"></script><!--translate.js settings-->
+	<script src="static/js/translate.js" defer></script>
+	<script src="static/js/translate-config.js" defer></script><!--translate.js settings-->
 
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">首页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#Others">其他</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#About">关于</a>
-                    </li>
+	<!-- Navigation-->
+	<nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+		<div class="container px-5">
+			<a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
+			<!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				MENU
+				<i class="bi-list"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+					<li class="nav-item">
+						<a class="nav-link me-lg-3" href="#page-top">首页</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link me-lg-3" href="#others">其他</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link me-lg-3" href="#about">关于</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
+	<!-- Top Section -->
+	<section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
+		<div class="top-section-content">
+			<div class="container px-5">
+				<h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+			</div>
+		</div>
+	</section>
+	<!-- Top Section -->
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
-            </div>
-        </div>
-    </section>
-    <!-- Top Section -->
+	<!-- Photo -->
+	<div class="container px-5">
+		<div id="avatar">
+			<img class="shadow" src="static/assets/img/photo.png" alt="Jimday 的头像" loading="lazy">
+		</div>
+	</div>
+	<!-- Photo -->
+	
+	<!-- Home -->
+	<section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+		<div class="container px-5">
+			<header>
+				<h2 id="home-subtitle"> </h2>
+				<!-- <span class="bi bi-list"></span> -->
+			</header>
+			<div class="main-body" id="home-md"></div>
+		</div>
+	</section>
+	<!-- Home -->
 
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
-        </div>
-    </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
-    </section>
-    <!-- Home -->
+	<!-- Publications -->
+	<section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="others">
+		<div class="container px-5">
+			<header>
+				<h2 id="publications-subtitle"><i class="bi bi-card-text"></i>&nbsp;其他</h2>
+			</header>
+			<div class="main-body" id="publications-md"></div>
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="Others">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-card-text"></i>&nbsp;其他</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
+		</div>
+	</section>
+	<!-- Publications  -->
 
-        </div>
-    </section>
-    <!-- Publications  -->
+	<!-- Awards -->
+	<section class="bg-gradient-primary-to-secondary-light mt5 md5" id="about">
+		<div class="container px-5">
+			<header>
+				<h2 id="awards-subtitle"><i class="bi bi-file-earmark-person"></i>&nbsp;关于</h2>
+			</header>
+			<div class="main-body" id="awards-md"></div>
 
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="About">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-file-earmark-person"></i>&nbsp;关于</h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
+		</div>
+	</section>
+	<!-- Awards -->
 
-        </div>
-    </section>
-    <!-- Awards -->
-
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/iJimday/My-cf-Homepage"  target="_blank">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/senli1073/academic-homepage-template"  target="_blank">模板</a>
-                <span class="mx-1">&middot;</span>
-                <a id="github-link" href="https://cloudflare.daijianmin.com/sitemap.xml"  target="_blank">网站地图</a>
-            </div>
-        </div>
-    </footer>
-
-</body>
+	<!-- Footer-->
+	<footer class="bg-bottom text-center py-5">
+		<div class="container px-5">
+			<div class="text-white-50 small">
+				<div id="copyright-text" class="mb-2"></div>
+				<a id="github-link" href="https://github.com/iJimday/My-cf-Homepage" target="_blank" rel="noopener noreferrer">Github</a>
+				<span class="mx-1">&middot;</span>
+				<a id="template-link" href="https://github.com/senli1073/academic-homepage-template" target="_blank" rel="noopener noreferrer">模板</a>
+				<span class="mx-1">&middot;</span>
+				<a id="sitemap-link" href="https://cloudflare.daijianmin.com/sitemap.xml" target="_blank" rel="noopener noreferrer">网站地图</a>
+			</div>
+		</div>
+	</footer>
 
 	<!--translate.zvo.cn-->
 	<script>
 		translate.execute(); //dom加载完后，进行translate.js 触发翻译的执行
 		translate.isTranslateExecute('english'); //当前是否已进行了翻译处理
 	</script>
-
+</body>
 </html>
