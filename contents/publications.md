@@ -7,3 +7,5 @@
 - [![Jimday](https://img.shields.io/badge/byJoey-cfnew-FF6633?style=flat-square&logo=cloudflare&logoColor=F38020&logoSize=auto&labelColor=F3F3F3)](https://byjoey-cfnew.cf.daijianmin.com/)
 
 - [![Jimday](https://img.shields.io/badge/cmliu-edgetunnel-FF6633?style=for-the-badge&logo=cloudflare&logoColor=F38020&logoSize=auto&labelColor=F3F3F3)](https://cmliu-edgetunnel.cf.daijianmin.com/)
+
+- <a href="https://i.furls.cn/" title="短链接" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none;"><img alt="Jimday" src="https://img.shields.io/badge/V50-i.furls.cn-666666?style=plastic&logo=kfc&logoColor=F40027&logoSize=auto&labelColor=f2f2f2&color=222222"></a>
